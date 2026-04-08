@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <title>Mine Sweeper</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body onload="onInit()">
+        <h1>MineSweeper</h1>
+        <table class="buttons">
+            <tr>
+                <td class="button level easy" onclick="onLevelPick(this)">Easy</td>
+                <td class="button level medium" onclick="onLevelPick(this)">Medium</td>
+                <td class="button level hard" onclick="onLevelPick(this)">Hard</td>
+            </tr>
+            <tr>
+                <td class="button mine-count"></td>
+                <td class="button game-mode" onclick="onReset()"></td>
+                <td class="button time"></td>
+            </tr>
+        </table>
+        <h2>LIVES LEFT: <span></span></h2>
+        <h3 class="hints">
+            <button class="hint" onclick="onHintClick(this)" data-i=0></button>
+            <button class="hint" onclick="onHintClick(this)" data-i=1></button>
+            <button class="hint" onclick="onHintClick(this)" data-i=2></button>
+        </h3>
+        <h3 hidden=true class="best-score">BEST SCORE FOR <span class="level-span"></span> LEVEL IS <span class="score-span"></span>s</h3>
+        <table class="board"></table>
+        <footer>Created by Gavriel Dabbah</footer>
+        <script src="js/main.js"></script>
+        <script src="js/levels.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/hints.js"></script>
+        <script src="js/score.js"></script>
+    </body>
+</html>
