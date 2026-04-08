@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: crimson;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 4px dashed greenyellow;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.hints {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+.hint {
+    background-color: white;
+    border: none;
+}
+
+
+.buttons {
+    padding: 10px lightgrey;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 5%;
+    width: 100px;
+    color: rgb(199, 4, 4);
+    background-color: lightgray;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+
+.button:active {
+      border: 1px solid white;
+}
+
+.level {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: large;
+}
+
+.level-picked {
+    transform: translateY(4px); /* Move button down */
+    background-color: rgb(192, 44, 106); 
+    border: 1px solid white; 
+}
+
+.board {
+    margin: 5%;
+    border: 1px grey solid;
+    margin: 0 auto;
+}
+.cell {
+    background-color: rgb(181, 177, 177);
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    width: 30px;
+    height: 30px; 
+    text-align: center;
+    font-size: 16px;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.revealed {
+    background-color: rgb(181, 177, 177);
+    border: 1px solid white;
+    text-align: center;
+}
+
+.picked {
+    background-color: yellow;
+}
+
+.best-score {
+    color: rgb(192, 44, 106);
+    text-align: center;
+}
