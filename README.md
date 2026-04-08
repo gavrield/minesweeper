@@ -1,32 +1,6 @@
 # minesweeper
-Coding Academy©
-Mine Sweeper
-Preface
-Let's create a super version of the Minesweeper game,
-First, play the game a little bit, get to know it and relax.
-Coding Academy©
-Recommendations Before Diving In
-Building projects is the best way to learn how to code. It’s OK to
-start even if you don’t understand everything yet, the material
-will become clearer as we practice and implement it.
-Read this PDF from the beginning multiple times. Make sure
-you know exactly what you’re trying to build before you start.
-Break the project into small tasks, and then break those into
-even smaller sub-tasks.
-Play the game until you feel comfortable with how it works.
-Remember: playing a game is not the same as programming a
-game.
-Reuse code you’ve already written. Work with open references
-such as previous exercises, solutions, in-class examples and
-slides. Make sure your code follows our conventions. There’s a
-difference between code that works and good-quality code.
-Minesweeper – Basic intro
-The goal of the game is to reveal all the cells that do not
-contain mines without being "blown up" by clicking on a cell
-with a mine underneath.
-Our Minesweeper basic functionality is based on the reference
-game
-Functionality and Features
+
+## Functionality and Features
 ● Show the board
 ● Left-click reveals the cell’s content
 o The cell may contain a mine (bomb)
@@ -144,7 +118,7 @@ The first clicked cell is never a mine
 HINT: We need to start with an empty board (no mines) and
 then place the mines and count the neighbors only on first
 click.
-Lives
+## Lives
 Add support for “LIVES” -
 The user has 3 LIVES:
 When a MINE is clicked:
@@ -152,7 +126,7 @@ When a MINE is clicked:
 • The LIVES counter decreases
 • The cell is being unrevealed
 • The user can mark it and continue playing
-Coding Academy©
+
 The Smiley button
 Add the smiley button - clicking the smiley resets the game
 here are some smiley states:
@@ -160,46 +134,45 @@ here are some smiley states:
 ● Sad & Dead – LOSE 🤯 (stepped on a mine and have
 no life left)
 ● Sunglasses – WIN 😎
-Bonus Tasks
-Add support for HINTS
+
+### Support for HINTS
 The user has 3 hints
 When a hint is clicked, it changes its look, example:
 Now, when an unrevealed cell is clicked, the cell and its
 neighbors are revealed for 1.5 seconds, and the clicked hint
 disappears.
-Best Score
+### Best Score
 Keep the best score in local storage (per level) and show it on
 the page
-Coding Academy©
-Full Expand
+### Full Expand
 When a cell that has no mines in his neighbors is clicked –
 reveal the cell and also expand to all it's neighbors in a
 recursive way.
 Here is an example:
 Think about a recursion.
-Safe click
+
+## More features to add
+### Safe click
 The user has 3 Safe-Clicks:
 Clicking the Safe-Click button will mark a random (unrevealed)
 safe cell (for 1.5 seconds) so the user knows that he can safely
 click that cell.
 Coding Academy©
-Dark Mode
-The user should be able to toggle between Dark-Mode and
-Light-Mode
-Undo
+
+### Undo
 Add an “UNDO” button, so the user can undo (some of) his
 moves
-Manually positioned mines
+### Manually positioned mines
 Create a “manually create” mode in which the user first
 positions the mines (by clicking cells) and then plays.
-MEGA HINT
+### MEGA HINT
 Mega-Hint works only once every game. It is used to reveal an
 area of the board for 2 seconds. Functionality description: (1)
 Click the “Mega Hint” button (2) then click the area’s top-left
 cell (3) then click bottom-right cell. The whole area will be
 revealed for 2 seconds.
-Coding Academy©
-MINE EXTERMINATOR
+
+### MINE EXTERMINATOR
 Clicking the “Exterminator” button, eliminate 3 of the existing
 mines, randomly. These mines will disappear from the board.
 Re-calculation of neighbors-count is needed
