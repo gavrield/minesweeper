@@ -98,6 +98,13 @@ svg {
 .picked {
     background-color: yellow;
 }
+footer {
+    text-align: center;
+    font: 1em sans-serif;
+    color: aqua;
+    font-size: 28px;
+    margin-top: 10%;
+}
 
 .best-score {
     color: rgb(192, 44, 106);
